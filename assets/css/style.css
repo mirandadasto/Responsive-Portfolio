@@ -1,4 +1,8 @@
 
+html {
+    box-sizing: border-box;
+}
+
 .background {
     background-image: url("../images/textured_paper.png");
     background-repeat: repeat;
@@ -50,11 +54,12 @@ a:active {
 }
 
 .container {
-    background-color: lightgray;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, Helvetica, sans-serif;
     clear: both;
-    width: 960px;
-    margin: 0 auto;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .row {
@@ -141,9 +146,14 @@ input {
     width: 100%;
 }
 
+.col-md-4 {
+    width: 50%;
+    float: left;
+}
+
 .col-md-4 img {
     display: block;
-    width: 100%
+    width: 90%
 }
 
 .col-md-4 p {
@@ -153,11 +163,13 @@ input {
     position: relative;
     top: -50px;
     text-align: center;
+    width: 87.5%;
 }
 
-@media screen and (max-width: 980px);
-@media screen and (max-width: 768px);
-@media screen and (max-width: 640px);
-
+.portfolioClearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+}
 
 
