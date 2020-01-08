@@ -35,7 +35,6 @@ nav {
     color:#cccccc;
     float: right;
     position: relative;
-    display: flex;
 }
 
 a:link, a:visited {
@@ -58,8 +57,8 @@ a:active {
     font-family: Arial, Helvetica, Helvetica, sans-serif;
     clear: both;
     max-width: 960px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .row {
@@ -88,11 +87,13 @@ h2 {
     border-color: #cccccc;
     font-size: 30px;
     padding: 0px 0px 0px 80px;
+    font-family: 'Georgia', Times, Times, serif;
 }
 
 .bio .row {
     background-color: #ffffff;
     padding: 10px 20px 10px 20px;
+    font-family: 'Georgia', Times, Times, serif;
 }
 
 p {
@@ -103,7 +104,7 @@ p {
     display: block;
     width: 45%;
     float: left;
-    padding: 0px 0px 20px 55px;
+    padding: 0px 0px 40px 55px;
     transform: rotate(270deg);
 }
 
@@ -173,4 +174,41 @@ input {
     content: "";
 }
 
+@media Screen and (max-width: 600px) {
+    
+    header {
+        padding:0;
+    }
+    
+    nav {
+        float: none;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        left: 0px;
+    }
 
+    h1 {
+        float: none;
+        width: 100%;
+        text-align: center;
+        left: 0px;
+        top: -20px;
+    }
+
+    h2 {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .clearfix img {
+        float: none;
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .bio .row {
+        padding: 15px 15px 15px 15px;
+    }
+
+}
